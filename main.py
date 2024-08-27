@@ -1,3 +1,6 @@
+import requests
+import pandas
+
 ''' 
 常數區塊
 
@@ -30,3 +33,19 @@ target_board = 'Stock'
 
 # 合併完整路徑
 target = BASE_URL + target_board + TARGET_PAGE + page_num + HTML_EXT
+
+
+
+
+
+
+def download_html(target, headers=HEADERS):
+    # data = requests.get(target, headers=headers)
+    # return data
+    return requests.get(target, headers=headers)
+
+''' 
+test
+'''
+x = download_html(target)
+print(x.content)
