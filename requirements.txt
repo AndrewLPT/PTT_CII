@@ -1,3 +1,5 @@
 pandas==2.1.4
 requests==2.32.3   
 BeautifulSoup4==4.12.3
+soupsieve>1.2==2.6
+python-dotenv==1.0.1
